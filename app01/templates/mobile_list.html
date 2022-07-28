@@ -1,0 +1,80 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <div>
+         <div class="container">
+             <div style="margin-bottom: 10px">
+                 <a class="btn btn-primary" href="/mobile/add/">添加手机号</a>
+
+                     <div style="float: right;width: 300px">
+                         <form method="get">
+                             <div class="col-lg-12">
+                            <div class="input-group">
+                              <input type="text" name="q" class="form-control" placeholder="Search for..." value="{{ search_data }}">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                              </span>
+                            </div>
+                          </div>
+                        </form>
+                     </div>
+
+             </div>
+
+              <div class="panel panel-default">
+              <!-- Default panel contents -->
+                  <div class="panel-heading">
+                     <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                      手机号列表
+                  </div>
+                  <div class="panel-body">
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>手机号</th>
+                        <th>价格</th>
+                        <th>级别</th>
+                        <th>状态</th>
+                        <th>操作</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                    {% for obj in mobil_list %}
+                      <tr>
+                        <th>{{ obj.id }}</th>
+                        <td>{{ obj.telephone }}</td>
+                        <td>{{ obj.price }}</td>
+                        <td>{{ obj.get_level_display }}</td>
+                        <td>{{ obj.get_status_display}}</td>
+                        <td>
+                              <a class="btn-primary btn-xs" href="/mobile/{{ obj.id }}/edit/">编辑</a>
+                              <a class="btn-danger btn-xs" href="/mobile/{{ obj.id }}/delete/">删除</a>
+                        </td>
+
+                      </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                  </div>
+
+         </div>
+        </div>
+     </div>
+<div class="container">
+    <div style="margin: 0 auto"></div>
+    <nav aria-label="Page navigation">
+      <ul class="pagination">
+
+        {{ page_str }}
+
+      </ul>
+    </nav>
+
+</div>
+
+
+{% endblock %}
