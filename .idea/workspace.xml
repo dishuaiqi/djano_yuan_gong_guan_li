@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44cfe1b-219c-49cb-8104-f5a053a71428" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/utils/bootstrap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/utils/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/views/depart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/views/mobile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/views/staff.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/templates/user_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/user_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/templates/user_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templates/user_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app01/utils/pagination.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/utils/pagination.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/di3/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/di3/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +35,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2CBqtUNHQLgevUoXbcgScdGa0HF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -42,6 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app01/static/plugin" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,7 +60,12 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Python.每日病原完整版excel">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python project\python project\di3\app01\static\plugin" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django server.di3">
     <configuration name="每日病原完整版excel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="di3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,7 +128,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658384245733</updated>
-      <workItem from="1658384257112" duration="72030000" />
+      <workItem from="1658384257112" duration="94300000" />
     </task>
     <servers />
   </component>
@@ -120,26 +136,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1200" height="160" key="GridCell.Tab.0.bottom" timestamp="1658901817609">
+    <state x="419" y="250" key="FileChooserDialogImpl" timestamp="1659163456048">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1200" height="160" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1658901817609" />
-    <state width="1200" height="160" key="GridCell.Tab.0.center" timestamp="1658901817609">
+    <state x="419" y="250" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1659163456048" />
+    <state width="1200" height="143" key="GridCell.Tab.0.bottom" timestamp="1659170938797">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1200" height="160" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1658901817609" />
-    <state width="1200" height="160" key="GridCell.Tab.0.left" timestamp="1658901817609">
+    <state width="1200" height="143" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1659170938797" />
+    <state width="1200" height="143" key="GridCell.Tab.0.center" timestamp="1659170938797">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1200" height="160" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1658901817609" />
-    <state width="1200" height="160" key="GridCell.Tab.0.right" timestamp="1658901817609">
+    <state width="1200" height="143" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1659170938797" />
+    <state width="1200" height="143" key="GridCell.Tab.0.left" timestamp="1659170938797">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1200" height="160" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1658901817609" />
-    <state x="302" y="218" width="672" height="678" key="search.everywhere.popup" timestamp="1658974308327">
+    <state width="1200" height="143" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1659170938797" />
+    <state width="1200" height="143" key="GridCell.Tab.0.right" timestamp="1659170938797">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="302" y="218" width="672" height="678" key="search.everywhere.popup/0.0.1280.984@0.0.1280.984" timestamp="1658974308327" />
+    <state width="1200" height="143" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1659170938797" />
+    <state x="302" y="218" width="672" height="678" key="search.everywhere.popup" timestamp="1659172443218">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="302" y="218" width="672" height="678" key="search.everywhere.popup/0.0.1280.984@0.0.1280.984" timestamp="1659172443218" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/di3$excel.coverage" NAME="每日病原完整版excel Coverage Results" MODIFIED="1658887241502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />

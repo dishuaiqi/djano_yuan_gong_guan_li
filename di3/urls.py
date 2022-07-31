@@ -15,26 +15,26 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app01 import views
+from app01.views import depart,mobile,staff
 urlpatterns = [
     # path('admin/', admin.site.urls),
     # 部门管理
-    path('part/list/', views.depart_list),
-    path('add/depart/', views.add_depart),
-    path('del/depart/', views.del_depart),
-    path('edit/depart/', views.edit_depart),
+    path('part/list/', depart.depart_list),
+    path('add/depart/', depart.add_depart),
+    path('del/depart/', depart.del_depart),
+    path('edit/depart/', depart.edit_depart),
     # 用户管理
-    path('user/list/', views.user_list),
-    path('user/add/', views.user_add),
+    path('user/list/', staff.user_list),
+    path('user/add/', staff.user_add),
     # 另一种方式传id
-    path('user/<int:id>/edit/', views.user_edit),
+    path('user/<int:id>/edit/', staff.user_edit),
     #删除
-    path('user/<int:id>/delete/', views.user_delete),
+    path('user/<int:id>/delete/', staff.user_delete),
 
     #靓号管理
-    path('mobile/list/',views.mobile_list),
-    path('mobile/add/',views.mobile_add),
-    path('mobile/<int:id>/edit/',views.mobile_edit),
-    path('mobile/<int:id>/delete/',views.mobile_delete),
+    path('mobile/list/',mobile.mobile_list),
+    path('mobile/add/',mobile.mobile_add),
+    path('mobile/<int:id>/edit/',mobile.mobile_edit),
+    path('mobile/<int:id>/delete/',mobile.mobile_delete),
 
 ]
