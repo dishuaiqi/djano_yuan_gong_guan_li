@@ -39,12 +39,12 @@ def mobile_list(request):
 '''新增靓号'''
 def mobile_add(request):
 
-    if request=='GET':
+    if request.method=='GET':
         form=MoblieForm()
 
         return render(request,'mobile_add.html',{'form':form})
     form=MoblieForm(data=request.POST)
-
+    print(form)
     if form.is_valid():
         form.save()
         return redirect('/mobile/list/')

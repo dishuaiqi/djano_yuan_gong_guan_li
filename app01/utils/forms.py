@@ -7,7 +7,7 @@ from app01.utils.bootstrap import BootStrapModleForm
 from django import forms
 from django.forms import ValidationError
 from django.core.validators import RegexValidator
-
+from app01.utils.encrypt import md5
 
 class Myform(BootStrapModleForm):
     class Meta:
@@ -48,3 +48,27 @@ class MoblieForm(BootStrapModleForm):
 
         #验证通过,用户输入的值返回
         return txt_mobile
+
+
+
+
+class AdminForm(BootStrapModleForm):
+    confirm_password=forms.CharField(label='确认密码',widget=forms.PasswordInput(render_value=True))
+        #render_value=True 表示若果出现错误，提交之后不会置空
+    class Meta:
+        model= models.Admin
+        fields=['Username','password','confirm_password']
+        widgets={
+            'password':forms.PasswordInput(render_value=True),
+        }
+    def clean_password(self):
+        pwd=self.cleaned_data.get('password')
+        return md5(pwd)
+
+    #钩子函数 判断密码是否一致
+    def clean_confirm_password(self):
+        pwd=self.cleaned_data.get('password')
+        confirm=md5(self.cleaned_data.get('confirm_password'))
+        if pwd !=confirm:
+            raise ValidationError('密码不一致')
+        return confirm
